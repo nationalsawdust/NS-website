@@ -1,0 +1,322 @@
+/* Have fun adding your style here :) - PS: At all times this file should contain a comment or a rule, otherwise opera might act buggy :( */
+
+/* General Custom CSS */
+
+* {
+	font-family: "Apercu Regular";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.avia_mobile #top .av-parallax-section { z-index: 0; }
+
+.avia_mobile #top .av-parallax-section{-webkit-transform: translate3d(0,0,0);}
+
+#top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before {
+	font-family: 'entypo-fontello' !important;
+}
+#header_main {
+	text-transform: uppercase !important;
+}
+#top .av_header_transparency{
+	background: rgba(0,0,0,0.8) !important;
+	font-family:"Apercu Bold", Calibri, sans-serif !important; 
+	font-size-adjust:0.508; 
+	font-weight:bold; 
+	font-style:normal; 
+	
+}
+
+#top .light_bg_color {
+	font-family:"Apercu Bold", Calibri, sans-serif !important; 
+}
+
+.page-id-20 .av-special-heading {
+	margin-bottom: 10px !important;
+	margin-top: 10px !important;
+	padding: 20px !important;
+}
+
+h1 {
+
+}
+
+.main_color .av-sort-by-term a {
+	color: black !important;
+}
+
+.main_color .text-sep {
+	color: #3e3e3e;
+}
+
+.avia-arrow {
+	display: none !important;
+}
+
+.main_color h3 {
+	color: black !important;
+}
+
+.main_color .site-background {
+	color: black !important;
+
+}
+
+#shopping-cart {
+	z-index: 3000;
+}
+
+#artfully-event h1, #artfully-event h2, #artfully-event h3 {
+	display: none;
+}
+
+.av_textblock_section {
+		font-family: 'Merriweather', serif;
+		font-weight:400; 
+		font-style:normal; 
+}
+
+.av_textblock_section b {
+		font-family: 'Merriweather', serif;
+		font-weight:700; 
+}
+
+.av_textblock_section i {
+		font-family: 'Merriweather', serif;
+		font-weight:400; 
+	font-style:italic;
+}
+
+
+.special-heading-border {
+	display: none;
+}
+
+.av_textblock_section {
+	font-size: 1.1em;
+}
+
+.main_color .av_promobox {
+	background: rgba(255, 255, 255, 0.8) !important;
+}
+
+.interstatebold {
+  
+  font-style: normal;
+
+}
+
+.page-id-1188 .avia-gallery {
+		background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.page-id-14 #av_section_1, .page-id-16 #av_section_1, .page-id-12 #av_section_1, .page-id-10 #av_section_1, .page-id-18 #av_section_1, .single #av_section_1, .page-template-default #av_section_1{
+	background-size: cover !important;
+}
+
+.main_color blockquote {
+	color: white;
+}
+
+.single-portfolio .comment-entry, .single .comment_container {
+		background: rgba(0,0,0,0.8) !important;
+}
+
+.single-portfolio .comment_container {
+	margin: 0px;
+	padding: 50px;
+	width: 100%;
+}
+
+#js_sort_items {
+	padding: 10px;
+	background: rgba(0,0,0,0.8) !important;
+	color: white;
+}
+
+.main_color #js_sort_items a {
+	color: white;
+}
+
+.single-post main, .single-post aside {
+
+}
+
+.template-blog {
+		padding-top: 200px;
+}
+
+.single-post aside, .single-post .content {
+		background: rgba(0,0,0,0.8) !important;
+}
+
+.single-post .container_wrap_first, .search-results .container_wrap_first{
+	background: url('http://dev.greyship.com/omw/wp-content/uploads/2014/04/vision-bg.jpg') !important;
+	background-size: cover !important;
+	background-attachment: fixed !important;
+}
+
+.search-results #main .container {
+	padding: 20px;
+	background: rgba(0,0,0,0.8) !important;
+}
+
+.single-post .main_color .big-preview {
+	background: none !important;
+}
+
+.single-post article {
+	background: none !important;
+}
+
+.single-post h1 {
+	background: none !important;
+}
+
+.single-post .content article, .single-post .related_posts, .single-post .comment_container {
+	padding-left: 20px;
+}
+
+.main_color .av-masonry {
+	background: black;
+	border-bottom: 1px solid white;
+}
+
+.page-id-2 .av-special-heading-h2 {
+	background: none !important;
+	margin-bottom: 5px;
+	padding-bottom: 0px !important;
+}
+
+.page-id-2 .av_one_third {
+	background: rgba(0,0,0,0.8) !important;
+}
+
+.page-id-2 h2 {
+	font-size: 20px !important;
+	min-height: 44px;
+}
+.page-id-2 .av-special-heading-h6 {
+	margin-top: 0px;
+	padding: 20px;
+}
+
+.page-id-2 #av_section_1 {
+	background-attachment: fixed !important;
+}
+
+.page-id-12 #after_section_1, .page-id-12 #main {
+	background: rgba(0,0,0,0) !important;
+}
+
+.page-id-12 .av_one_half {
+	background: rgba(0,0,0,0) !important;
+}
+
+.page-template-default .avia-promocontent p {
+	color: black !important;
+}
+
+.exbanner {
+	width: 100% !important;
+	height: auto !important;
+}
+
+.page-template-default .avia-section-large .av_one_full {
+	background: rgba(0,0,0,0.8) !important;
+}
+
+
+
+.main_color .avia-icon-list .iconlist_icon {
+	background: #00e837;
+}
+
+.avia-icon-list {
+	background: rgba(0,0,0,0.8) !important;
+	padding: 20px;
+}
+
+.iconlist_content {
+	color: white !important;
+}
+.page-id-1158 h1 {
+	margin-top: 30px !important;
+	background: rgba(0,0,0,0.0) !important;
+	padding-left: 50px !important;
+}
+
+.page-id-1158 .av_font_icon {
+	margin-right: 40px;
+}
+
+a.avia-button.avia-icon_select-yes-left-icon.avia-color-theme-color.avia-size-x-large.avia-position-center {
+	text-align: center;
+	padding: 10px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+a.avia-button.avia-icon_select-yes-left-icon.avia-color-theme-color.avia-size-x-large.avia-position-center:hover {
+	text-decoration: none;
+	background: white;
+	color: black !important;
+}
+
+#top .avia-button-fullwidth:hover .avia_iconbox_title {
+	color: black !important;
+}
+
+
+/*
+Desktop Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the desktop view of your site */
+
+@media only screen and (min-width: 768px) {
+  /* Add your Desktop Styles here */
+  
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 989px) {
+  #top .av_header_transparency.av_alternate_logo_active .logo a > img {
+	  max-width: 100px;
+	  height: auto;
+  }
+  
+  .menu-item-search-dropdown {
+	  display: none;
+  }
+}
+
+
+/*
+Mobile Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the Mobile and Tablet Portrait view */
+
+@media only screen and (max-width: 767px) {
+  /* Add your Mobile Styles here */
+.responsive .mobile_slide_out .logo {
+width: 200px !important;
+margin-left: auto;
+margin-right: auto;
+float: none !important;
+}
+
+.responsive .mobile_slide_out .logo img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.av_mobile_menu_phone #header_main, .light_bg_color {
+	background: rgba(255,255,255,0.8) !important;
+}
+
+.template-blog {
+		padding-top: 20px;
+}
+
+
+}

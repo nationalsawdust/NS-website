@@ -1,0 +1,139 @@
+/* Have fun adding your style here :) - PS: At all times this file should contain a comment or a rule, otherwise opera might act buggy :( */
+
+/* General Custom CSS */
+
+h1 {
+	font-family: Swiss721BT-BlackCondensed;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 6em;
+}
+
+h2 {
+	
+	font-family: Swiss721BT-BoldCondensed;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 4em;
+	padding-bottom: 10px;
+	
+}
+
+body .av-special-heading .av-special-heading-tag {
+	padding-bottom: 20px;
+}
+
+.av-masonry-sort a {
+	padding: 5px;
+	border: 2px black solid;
+	color: black;
+}
+
+.av-masonry-sort a:hover {
+	padding: 5px;
+	border: 2px white solid;
+	color: white;
+	background-color: black;
+}
+
+.main_color .av-sort-by-term a.active_sort {
+	color: white;
+	background-color: black;
+}
+
+.main_color div {
+	border-color: black !important;
+}
+
+.av-special-heading-h2 {
+	border-bottom: 5px black solid;
+}
+
+.special-heading-inner-border {
+	display: none;
+}
+
+p {
+	font-family: Swiss721BT-Medium;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2em;
+}
+
+p em {
+	font-family: Swiss721BT-MediumItalic;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.epm-form-field {
+	
+}
+
+.av-inner-masonry-content {
+	background-color: white !important;
+}
+
+.avia-arrow {
+	display: none;
+}
+
+#artfully-event h1, #artfully-event h2, #artfully-event h3 {
+	display: none;
+}
+.avia_mobile #top .av-parallax-section { z-index: 0; }
+
+.avia_mobile #top .av-parallax-section{-webkit-transform: translate3d(0,0,0);}
+
+#header_main {
+	text-transform: uppercase !important;
+}
+
+
+.events-photo .tribe-events-list #tribe-events-photo-events .tribe-events-event-details h2 {
+	font-size: 3em;
+}
+
+.av-tribe-events-inner-content-wrap {
+	display: none !important;
+}
+
+
+/*
+Desktop Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the desktop view of your site */
+
+@media only screen and (min-width: 768px) {
+  /* Add your Desktop Styles here */
+  
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 989px) {
+  #top .av_header_transparency.av_alternate_logo_active .logo a > img {
+	  max-width: 100px;
+	  height: auto;
+  }
+  
+}
+
+
+/*
+Mobile Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the Mobile and Tablet Portrait view */
+
+@media only screen and (max-width: 767px) {
+  /* Add your Mobile Styles here */
+.responsive .mobile_slide_out .logo {
+width: 200px !important;
+margin-left: auto;
+margin-right: auto;
+float: none !important;
+}
+
+
+
+
+}
