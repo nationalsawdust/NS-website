@@ -521,9 +521,9 @@ require_once( 'functions-enfold.php');
 
 add_filter('avf_builder_boxes','enable_boxes_on_posts');
 function enable_boxes_on_posts($boxes) {
-	$boxes[] = array( 'title' =>__('Avia Layout Builder','avia_framework' ), 'id'=>'avia_builder', 'page'=>array('page','post', 'tribe_events'), 'context'=>'normal', 'expandable'=>true );
-	$boxes[] = array( 'title' =>__('Layout','avia_framework' ), 'id'=>'layout', 'page'=>array('page','post', 'tribe_events'), 'context'=>'side', 'priority'=>'low');
-	$boxes[] = array( 'title' =>__('Additional Portfolio Settings','avia_framework' ), 'id'=>'preview', 'page'=>array('page','post','tribe_events'), 'context'=>'normal', 'priority'=>'high' );
+	$boxes[] = array( 'title' =>__('Avia Layout Builder','avia_framework' ), 'id'=>'avia_builder', 'page'=>array('page','post','portfolio','tribe_events'), 'context'=>'normal', 'expandable'=>true );
+	$boxes[] = array( 'title' =>__('Layout','avia_framework' ), 'id'=>'layout', 'page'=>array('page','post','portfolio','tribe_events'), 'context'=>'side', 'priority'=>'low');
+	$boxes[] = array( 'title' =>__('Additional Portfolio Settings','avia_framework' ), 'id'=>'preview', 'page'=>array('page','post','portfolio','tribe_events'), 'context'=>'normal', 'priority'=>'high' );
 	
 	return $boxes;
 }
