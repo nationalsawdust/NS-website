@@ -10,13 +10,13 @@ h1 {
 }
 
 h2 {
-	
+
 	font-family: Swiss721BT-BoldCondensed;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 4em;
 	padding-bottom: 10px;
-	
+
 }
 
 body .av-special-heading .av-special-heading-tag {
@@ -66,7 +66,7 @@ p em {
 }
 
 .epm-form-field {
-	
+
 }
 
 .av-inner-masonry-content {
@@ -100,12 +100,12 @@ p em {
 
 /*
 Desktop Styles
-================================================== */
+=================================================== */
 /* Note: Add new css to the media query below that you want to only effect the desktop view of your site */
 
 @media only screen and (min-width: 768px) {
   /* Add your Desktop Styles here */
-  
+
 
 
 }
@@ -114,7 +114,7 @@ Desktop Styles
 	  max-width: 100px;
 	  height: auto;
   }
-  
+
 }
 
 
