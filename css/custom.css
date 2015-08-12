@@ -97,10 +97,241 @@ p em {
 	display: none !important;
 }
 
+/*
+Navigation
+===========
+Hovers
+*/
+
+header#header #header_main {
+	border-bottom-color: #D2D2D2;
+}
+
+header#header #header_main .container .inner-container nav.main_menu {
+	left: 0;
+}
+
+header#header #header_main .container .inner-container nav.main_menu .avia-menu ul#avia-menu li.menu-item a:hover {
+	background: black;
+	color: #fff;
+}
+
+header#header #header_main .container .inner-container nav.main_menu .avia-menu ul#avia-menu li.menu-item a span.avia-menu-fx{
+	display: none;
+}
+
+header#header #header_main .container .inner-container nav.main_menu .avia-menu ul#avia-menu li.menu-item.current-menu-item a span.avia-menu-fx{
+	display: block;
+	background-color: #000;
+}
+
+header#header #header_main .container .inner-container nav.main_menu .avia-menu ul#avia-menu li.menu-item.menu-item-search-dropdown a{
+	padding-right: 13px;
+}
+
+/*
+NB: Overriding hover transition time from layout.css:402
+*/
+.av-main-nav > li > a {
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+/*
+Navigation
+===========
+About submenu
+*/
+
+li.menu-item-has-children .avia_mega_div{
+	background-color: #F5F5F5;
+	margin: 1px 0 0 0 !important;
+}
+
+li.menu-item-has-children .avia_mega_div ul.sub-menu {
+	padding: 0 !important;
+	border-top: none !important;
+	margin-top: 0 !important;
+	background: transparent;
+}
+
+li.menu-item-has-children .avia_mega_div ul.sub-menu li {
+	border-color:transparent !important;
+	padding: 0 !important;
+}
+
+li.menu-item-has-children .avia_mega_div ul.sub-menu li span.mega_menu_title a {
+	padding: 20px 30px !important;
+	text-align: center !important;
+}
+
+li.menu-item-has-children .avia_mega_div ul.sub-menu li span.mega_menu_title a:hover {
+	text-decoration: none !important;
+}
+
+/*
+Calendar page
+===========
+Search and filters
+*/
+
+#tribe-events-bar {
+	display: inline-block;
+	margin-bottom: 0 !important;
+	border:none;
+	border-bottom: 1px solid #ddd !important;
+}
+
+#tribe-bar-views {
+	padding: 0 23px !important;
+}
+
+#tribe-bar-views .tribe-bar-views-inner {
+	border: none;
+	padding: 23px 0 !important;
+}
+
+#tribe-bar-views .tribe-bar-views-inner ul.tribe-bar-views-list li.tribe-bar-views-option a{
+	padding: 12px 15px 13px;
+}
+
+.tribe-bar-filters {
+	padding-left: 23px;
+	border: none;
+}
+
+.tribe-bar-date-filter{
+	float: right;
+	width: 12% !important;
+}
+
+.tribe-bar-search-filter {
+	width: 88% !important;
+	float: left;
+	margin-left: 0 !important;
+}
+
+.tribe-bar-submit {
+	display: none;
+}
+
+#tribe_events_filters_wrapper {
+	position: relative !important;
+	display: inline-block;
+	padding: 0 !important;
+	width: 100% !important;
+	margin-top: 0 !important;
+	border: none;
+	border-bottom: 1px solid #bfbfbf !important;
+}
+
+#tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix #tribe_events_filter_control #tribe_events_filters_toggle.tribe_events_filters_show_filters {
+	line-height: 65px;
+}
+
+/*
+NB: There's a mystery object that gets destroyed on load but funks up the dom for a few ms. The sadness below kills it at the root;
+*/
+#tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form > * {
+	display: none !important;
+}
+#tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_eventcategory, #tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_cost, #tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_tags, #tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_dayofweek, #tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_timeofday, #tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_organizers{
+	display:inline-block !important;
+}
+
+.tribe-events-filter-view.tribe-filters-closed #tribe_events_filters_form {
+
+}
+
+#tribe_events_filters_wrapper:before, #tribe_events_filters_wrapper:after {
+	content: ".";
+	background: #F5F5F5;
+	position: absolute;
+	height: 91px;
+	width: 2000px;
+	left: -2000px;
+	text-indent: -50px;
+	overflow: hidden;
+	border-bottom: none;
+	border-bottom: 1px solid #bfbfbf !important;
+}
+
+#tribe_events_filters_wrapper:after {
+	left: 100%;
+}
+
+
+#tribe_events_filters_wrapper .tribe-events-filters-content {
+	border:none;
+	padding: 13px 5px !important;
+	float: left;
+	width: 100%;
+}
+
+/*
+Calendar page
+===========
+Event display
+*/
+
+.tribe-events-loop.hfeed.vcalendar {
+	display: inline-block;
+	margin: 18px 0 !important;
+	height: auto !important;
+	-webkit-columns: 3;
+	-moz-columns: 3;
+	-o-columns: 3;
+	columns: 3;
+	-webkit-column-gap: 1px;
+	-moz-column-gap: 1px;
+	-o-column-gap: 1px;
+	column-gap: 1px;
+}
+
+.tribe-events-list .vevent.hentry {
+	position: static !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	margin: 0 0 -6px !important;
+	overflow: hidden;
+	display: inline-block;
+	float: none !important;
+}
+
+.tribe-events-list .vevent.hentry .tribe-events-photo-event-wrap {
+	width: 100% !important;
+	display: block;
+	border:none !important;
+	margin:0 0 1px 0 !important;
+}
+
+.tribe-events-list .vevent.hentry .tribe-events-photo-event-wrap:hover {
+	box-shadow: none;
+}
+
+.tribe-events-list .vevent.hentry .tribe-events-photo-event-wrap .tribe-events-event-image a {
+	display: block;
+}
+
+.tribe-events-list .vevent.hentry .tribe-events-photo-event-wrap .tribe-events-event-image a img {
+	opacity: .7;
+	/*NB: Transitions seem to break the column layout*/
+	/*-webkit-transition: opacity 0.4s ease-in-out;*/
+	/*-o-transition: opacity 0.4s ease-in-out;*/
+	/*transition: opacity 0.4s ease-in-out;*/
+}
+
+.tribe-events-list .vevent.hentry .tribe-events-photo-event-wrap .tribe-events-event-image a:hover img {
+	opacity: 1;
+}
+
+.tribe-events-list .vevent.hentry .tribe-events-photo-event-wrap .tribe-events-event-image a span, .tribe-events-list .vevent.hentry .tribe-events-photo-event-wrap .tribe-events-event-image a:hover span{
+	display: none !important;
+}
 
 /*
 Desktop Styles
-==================================================== */
+================================================== */
 /* Note: Add new css to the media query below that you want to only effect the desktop view of your site */
 
 @media only screen and (min-width: 768px) {
