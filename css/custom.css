@@ -77,17 +77,9 @@ p em {
 	display: none;
 }
 
-#artfully-event h1, #artfully-event h2, #artfully-event h3 {
-	display: none;
-}
 .avia_mobile #top .av-parallax-section { z-index: 0; }
 
 .avia_mobile #top .av-parallax-section{-webkit-transform: translate3d(0,0,0);}
-
-#header_main {
-	text-transform: uppercase !important;
-}
-
 
 .events-photo .tribe-events-list #tribe-events-photo-events .tribe-events-event-details h2 {
 	font-size: 3em;
@@ -98,6 +90,27 @@ p em {
 }
 
 /*
+Default overrides
+=============
+*/
+
+.main_color a,
+.main_color .widget_first,
+.main_color strong,
+.main_color b,
+.main_color b a,
+.main_color strong a,
+.main_color #js_sort_items a:hover,
+.main_color #js_sort_items a.active_sort,
+.main_color .av-sort-by-term a.active_sort,
+.main_color .special_amp,
+.main_color .taglist a.activeFilter,
+.main_color #commentform .required,
+#top .main_color .av-no-color.av-icon-style-border a.av-icon-char {
+	color:black;
+}
+
+/*
 Navigation
 ===========
 Hovers
@@ -105,6 +118,7 @@ Hovers
 
 header#header #header_main {
 	border-bottom-color: #D2D2D2;
+	text-transform: uppercase !important;
 }
 
 header#header #header_main .container .inner-container nav.main_menu {
@@ -133,7 +147,8 @@ header#header #header_main .container .inner-container nav.main_menu .avia-menu 
 NB: Overriding hover transition time from layout.css:402
 */
 .av-main-nav > li > a {
-	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out,
+	color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 /*
@@ -234,7 +249,12 @@ NB: There's a mystery object that gets destroyed on load but funks up the dom fo
 #tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form > * {
 	display: none !important;
 }
-#tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_eventcategory, #tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_cost, #tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_tags, #tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_dayofweek, #tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_timeofday, #tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_organizers{
+#tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_eventcategory,
+#tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_cost,
+#tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_tags,
+#tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_dayofweek,
+#tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_timeofday,
+#tribe_events_filters_wrapper .tribe-events-filters-content.tribe-clearfix form#tribe_events_filters_form #tribe_events_filter_item_organizers{
 	display:inline-block !important;
 }
 
@@ -325,8 +345,102 @@ Event display
 	opacity: 1;
 }
 
-.tribe-events-list .vevent.hentry .tribe-events-photo-event-wrap .tribe-events-event-image a span, .tribe-events-list .vevent.hentry .tribe-events-photo-event-wrap .tribe-events-event-image a:hover span{
+.tribe-events-list .vevent.hentry .tribe-events-photo-event-wrap .tribe-events-event-image a span,
+.tribe-events-list .vevent.hentry .tribe-events-photo-event-wrap .tribe-events-event-image a:hover span{
 	display: none !important;
+}
+
+/*
+Event page
+===========
+Tickets div
+*/
+
+.avia-builder-el-last .av-special-heading{
+	border-bottom-color: white !important;
+}
+
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event h1,
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event h2,
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event h3 {
+	display: none !important;
+}
+
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event ul.performances,
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event ul.performances li.performance,
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event ul.performances li.performance ul.ticket-types {
+	margin: 0 !important;
+}
+
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event ul.performances,
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event ul.performances li.performance ul.ticket-types {
+	list-style-type: none !important;
+}
+
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event ul.performances li.performance a.performance-datetime {
+	color:white;
+	float: left;
+}
+
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event ul.performances li.performance ul.ticket-types {
+	display: inline-block;
+	margin: 0;
+	width: 100%;
+}
+
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event ul.performances li.performance ul.ticket-types li {
+	margin: 0;
+}
+
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event ul.performances li.performance ul.ticket-types li span.ticket-type-price,
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event ul.performances li.performance ul.ticket-types li form select {
+	border-radius: 0;
+}
+
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event ul.performances li.performance ul.ticket-types li form input {
+	background-color: #000 !important;
+	border: 2px solid white !important;
+}
+
+.avia-builder-el-last section.avia_codeblock_section .avia_codeblock #artfully-event ul.performances li.performance ul.ticket-types li form input:hover {
+	background-color: #fff !important;
+	color: black;
+}
+
+/*
+Shopping Cart
+===========
+*/
+
+#shopping-cart.shown {
+	z-index: 2000;
+}
+
+#shopping-cart #shopping-cart-controls {
+	background-color: black !important;
+	border-radius:0 !important;
+	width: initial !important;
+	padding: 15px 5px 15px 27px !important;
+}
+
+/*
+Footer
+===========
+Copyright
+*/
+
+.container_wrap.footer_color {
+	background-color: white !important;
+	border:none;
+	border-color:#CACACA;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+footer#socket{
+    background-color: #CCCCCC !important;
+    color: #000 !important;
+    border: none !important;
 }
 
 /*
