@@ -59,6 +59,10 @@ p {
 	font-style: normal;
 }
 
+.av-styling-circle .avia-image-container-inner, .av-styling-circle .avia_image, .av-styling-circle .av-image-caption-overlay, .av-styling-circle div.av-caption-image-overlay-bg {
+	border-radius: 0px;
+}
+
 p em {
 	font-family: Swiss721BT-MediumItalic;
 	font-weight: normal;
