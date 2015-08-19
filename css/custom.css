@@ -25,8 +25,6 @@ h3, h4, h5, h6 {
 	font-family: Swiss721BT-BoldCondensed;
 	font-weight: normal;
 	font-style: normal;
-	/*font-size: 4em;*/
-	/*padding-bo ttom: 10px;*/
 }
 
 body .av-special-heading .av-special-heading-tag {
@@ -174,7 +172,6 @@ header#header #header_main .container .inner-container nav.main_menu .avia-menu 
 }
 
 header#header #header_main .container .inner-container nav.main_menu .avia-menu ul#avia-menu li.menu-item.current-menu-item a span.avia-menu-fx{
-	/*display: none;*/
 	background-color: #000;
 }
 
@@ -328,14 +325,6 @@ Masonry
 	padding: 0;
 }
 
-#main .main_color .av-masonry .av-masonry-container a .av-inner-masonry figcaption.av-inner-masonry-content .av-inner-masonry-content-pos .entry-content {
-	/*display:none;*/
-}
-
-#main .main_color .av-masonry .av-masonry-container a:hover .av-inner-masonry figcaption.av-inner-masonry-content .av-inner-masonry-content-pos .entry-content {
-	/*display: inline-block;*/
-}
-
 /*
 Calendar page
 ===========
@@ -445,12 +434,51 @@ NB: There's a mystery object that gets destroyed on load but funks up the dom fo
 	display:inline-block !important;
 }
 
-#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-checkboxes {
+#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-group {
 	border: none !important;
+	box-shadow: none !important;
 }
 
-#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-checkboxes:before,
-#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-checkboxes:after {
+#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-checkboxes ul,
+#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-range,
+#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-select {
+	border: 2px solid black !important;
+}
+
+#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-range #tribe_events_filter_cost_slider .ui-slider-range {
+	background: black !important;
+}
+
+#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-range #tribe_events_filter_cost_slider .ui-slider-handle {
+	border-radius: 100% !important;
+	background: white !important;
+	border: 2px solid black !important;
+}
+
+#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-checkboxes ul li label {
+	padding: 0;
+	background: white;
+	border-bottom: 1px solid #ddd;
+}
+
+#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-checkboxes ul li label input {
+	margin: 15px 7px;
+	position: relative;
+}
+
+#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-checkboxes ul li label span {
+	padding: 15px 15px 15px 33px;
+	margin-left: -34px;
+	width: 110% !important;
+}
+
+#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-checkboxes ul li label input:checked + span {
+	background-color: black;
+	color: white;
+}
+
+#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-group:before,
+#tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-group:after {
 	border: none !important;
 }
 
@@ -666,7 +694,6 @@ Extra Data
 	margin: 0;
 	float: left;
 	padding: 0 4%;
-	/*min-height: 320px;*/
 }
 
 #footer .container .flex_column.av_one_fourth:nth-of-type(2) {
