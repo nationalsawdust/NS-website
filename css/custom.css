@@ -462,12 +462,12 @@ NB: There's a mystery object that gets destroyed on load but funks up the dom fo
 }
 
 #tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-checkboxes ul li label input {
-	margin: 15px 7px;
+	margin: 10px 7px;
 	position: relative;
 }
 
 #tribe_events_filters_wrapper .tribe-events-filters-content form#tribe_events_filters_form .tribe_events_filter_item .tribe-events-filter-checkboxes ul li label span {
-	padding: 15px 15px 15px 33px;
+	padding: 10px 10px 10px 33px;
 	margin-left: -34px;
 	width: 110% !important;
 }
