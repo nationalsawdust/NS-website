@@ -277,6 +277,7 @@ Masonry
 #main .main_color .av-masonry .av-masonry-container a .av-inner-masonry {
 	overflow: visible;
 	display: inline-block;
+	width: 100%;
 }
 
 #main .main_color .av-masonry .av-masonry-container a .av-inner-masonry .av-masonry-outerimage-container .av-masonry-image-container {
